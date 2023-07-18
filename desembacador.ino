@@ -113,8 +113,6 @@ void temperatura(){
 
 void sensorPresenca(){
 
-  // Serial.println("Motorista: " + String(digitalRead(pinoPir1)) + " Passageiro: " + String(digitalRead(pinoPir2)));
-
   // Se o sensor estiver em HIGH liga o led e o lcd, senão desliga os dois
   if(digitalRead(pinoPir1) == HIGH){
     // Serial.println("Presenca no sensor 1"); 
@@ -161,14 +159,4 @@ void rele(){
     burnOn = false;
     timerBurn = 0;
   }
-  // Serial.println("Interior: " + String(celsiusInt) + " Exterior: " + String(celsiusExt) + " Cálculo: " + String(celsiusInt - ((100 - humidade)/5)));
-  // if (celsiusExt <= celsiusInt - ((100 - humidade)/5)){
-  // 	digitalWrite(relePin, HIGH);
-    
-  //   Serial.println("Rele ON");
-  // }
-  // else {
-  // 	digitalWrite(relePin, LOW);
-  //   Serial.println("Rele OFF");
-  // }
 }
