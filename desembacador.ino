@@ -115,7 +115,6 @@ void sensorPresenca(){
 
   // Se o sensor estiver em HIGH liga o led e o lcd, senão desliga os dois
   if(digitalRead(pinoPir1) == HIGH){
-    // Serial.println("Presenca no sensor 1"); 
     digitalWrite(pinoLed1, HIGH);
     lcd.setCursor(0,0);
     lcd.print("M");
@@ -130,7 +129,6 @@ void sensorPresenca(){
     
   // Se o sensor estiver em HIGH liga o led e o lcd, senão desliga os dois
   if(digitalRead(pinoPir2) == HIGH){
-    // Serial.println("Presenca no sensor 2"); 
     digitalWrite(pinoLed2, HIGH);
     lcd.setCursor(0,1);
     lcd.print("P");
