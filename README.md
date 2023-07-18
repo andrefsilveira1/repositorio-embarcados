@@ -6,6 +6,6 @@ Esse código representa a implementação de um dispositivo desembaçador para v
 
 ### Contribuições:
 
-- Desenvolvimento: Isaque Barbosa @
+- Desenvolvimento: Isaque Barbosa @ronaque
 - Prototipação e relatório: André Freitas @andrefsilveira1
 - Prototipação e relatório: João Guilherme @joaoguilac
