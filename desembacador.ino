@@ -53,7 +53,7 @@ void setup()
 {
   // Comunicação serial
   Serial.begin(9600);
-  Serial.println("initializing setup...");
+  Serial.println("Iniciando o setup...");
   
   // Setup sensores de presença e leds
   pinMode(pinoLed1, OUTPUT);
@@ -113,11 +113,8 @@ void temperatura(){
 
 void sensorPresenca(){
 
-  // Serial.println("Motorista: " + String(digitalRead(pinoPir1)) + " Passageiro: " + String(digitalRead(pinoPir2)));
-
   // Se o sensor estiver em HIGH liga o led e o lcd, senão desliga os dois
   if(digitalRead(pinoPir1) == HIGH){
-    // Serial.println("Presenca no sensor 1"); 
     digitalWrite(pinoLed1, HIGH);
     lcd.setCursor(0,0);
     lcd.print("M");
@@ -132,7 +129,6 @@ void sensorPresenca(){
     
   // Se o sensor estiver em HIGH liga o led e o lcd, senão desliga os dois
   if(digitalRead(pinoPir2) == HIGH){
-    // Serial.println("Presenca no sensor 2"); 
     digitalWrite(pinoLed2, HIGH);
     lcd.setCursor(0,1);
     lcd.print("P");
@@ -161,14 +157,4 @@ void rele(){
     burnOn = false;
     timerBurn = 0;
   }
-  // Serial.println("Interior: " + String(celsiusInt) + " Exterior: " + String(celsiusExt) + " Cálculo: " + String(celsiusInt - ((100 - humidade)/5)));
-  // if (celsiusExt <= celsiusInt - ((100 - humidade)/5)){
-  // 	digitalWrite(relePin, HIGH);
-    
-  //   Serial.println("Rele ON");
-  // }
-  // else {
-  // 	digitalWrite(relePin, LOW);
-  //   Serial.println("Rele OFF");
-  // }
 }
