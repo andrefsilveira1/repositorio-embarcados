@@ -53,7 +53,7 @@ void setup()
 {
   // Comunicação serial
   Serial.begin(9600);
-  Serial.println("initializing setup...");
+  Serial.println("Iniciando o setup...");
   
   // Setup sensores de presença e leds
   pinMode(pinoLed1, OUTPUT);
